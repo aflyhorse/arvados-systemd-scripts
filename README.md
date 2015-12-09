@@ -11,15 +11,15 @@ Remember to issue a ```systemctl daemon-reload``` afterwards.
 
 #### Notice
 
-* This set of scripts has got rid of the [RVM](https://rvm.io/). RVM is a great tool for Ruby version control, but since this project is package-oriented, using RVM is not a good practice. Ruby 2.1.5 (the current version used by Arvados) should be included in repository as a dependency, but not an unpackaged RVM Ruby.
+* This set of scripts has got rid of the [RVM](https://rvm.io/). RVM is a great tool for Ruby version control, but since this project is package-oriented, using RVM is not a good practice. Ruby 2.1.5 (the current version used by Arvados) should be included in repository as a dependency.
 
-* The default target of this script is Debian system. You need to change some redistribution-related path in Unit files, see belowing. Automatic switching script is under development.
+* The default target of this script is Debian system. You need to change some redistribution-related path in unit files (see belowing). Automatic switching script is under development.
 
 #### ```system``` directory
 
 ##### System Administrators
 
-Put the service files in ```/etc/systemd/system```.
+Put the service files in ```/etc/systemd/system/```.
 
 ##### Packagers
 
