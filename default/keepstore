@@ -1,2 +1,5 @@
+VOLUME="/keep"
+BLOB_KEY="/etc/keepstore/blob-signing.key"
+MAX_BUFFERS=100
 GOGC=10
 GOMAXPROCS=4

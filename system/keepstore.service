@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 EnvironmentFile=/etc/default/keepstore
-ExecStart=/usr/bin/keepstore -enforce-permissions=true -blob-signing-key-file=/etc/keepstore/blob-signing.key -max-buffers=100 -serialize=true -volume=/keep
+ExecStart=/usr/bin/keepstore -enforce-permissions=true -blob-signing-key-file=${BLOB_KEY} -max-buffers=${MAX_BUFFERS} -serialize=true -volume=${VOLUME}
 
 [Install]
 WantedBy=multi-user.target
