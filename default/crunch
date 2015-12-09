@@ -1,0 +1,6 @@
+ME=/var/www/arvados-api/current
+ARVADOS_API_HOST=uuid_prefix.example.org
+RAILS_ENV=production
+#ARVADOS_API_HOST_INSECURE=false
+CRUNCH_JOB_DOCKER_BIN=/usr/bin/docker
+
