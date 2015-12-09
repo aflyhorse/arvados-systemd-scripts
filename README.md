@@ -25,7 +25,7 @@ Put the service files in ```/etc/systemd/system/```.
 
 Put the service files in ```/usr/lib/systemd/system/```.
 
-The RPMs expect the initial status of unit files are ```disabled``` by default, while Debs usually ```enable``` them automatically.
+Note that the RPMs expect the initial status of unit files are _disabled_ by default, while DEBs usually _enable_ them automatically.
 
 #### ```default``` directory
 
@@ -35,10 +35,10 @@ Put the config files in:
 
 * CentOS: ```/etc/sysconfig/```
 
-and then change the varibles ini the config file as appropriate.
+and then change the varibles in the config file as appropriate.
 
 ### Licence
 
-The project is licensed under Apache License Version 2.0, unless otherwise specified.
+The project is licensed under __Apache License Version 2.0__, unless otherwise specified.
 
-Some rights is granted to the Arvados project, including but not limited to modification, redistribution, and relicensing this project.
+Some rights were granted to the __Arvados__ Project, including but not limited to modification, redistribution, and relicensing this project.
