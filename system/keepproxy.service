@@ -1,0 +1,11 @@
+[Unit]
+Description=Arvados Keepproxy server
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/keepproxy
+ExecStart=/usr/bin/keepproxy -default-replicas=${DEFAULT_REPLICAS}
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Puma, A ruby web server built for concurrency
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bundle exec puma -t 0:512 -e production -b tcp://127.0.0.1:8100
+User=www-data
+Group=www-data
+Environment="ARVADOS_WEBSOCKETS=ws-only"
+MemoryLimit=1G
+WorkingDirectory=/var/www/arvados-api/current
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

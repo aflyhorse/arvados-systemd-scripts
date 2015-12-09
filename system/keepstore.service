@@ -1,0 +1,11 @@
+[Unit]
+Description=Arvados Keepstore server
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/keepstore
+ExecStart=/usr/bin/keepstore -enforce-permissions=true -blob-signing-key-file=/etc/keepstore/blob-signing.key -max-buffers=100 -serialize=true -volume=/keep
+
+[Install]
+WantedBy=multi-user.target

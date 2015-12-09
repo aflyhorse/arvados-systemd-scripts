@@ -1,0 +1,13 @@
+[Unit]
+Description=Arvados Crunch-Dispatcher
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bundle exec ./script/crunch-dispatch.rb
+EnvironmentFile=/etc/default/crunch
+WorkingDirectory=/var/www/arvados-api/current
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target

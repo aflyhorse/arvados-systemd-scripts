@@ -1,0 +1,13 @@
+[Unit]
+Description=provides HTTP access using Arvados authentication tokens instead of passwords
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/arvados-git-httpd -address=:9001 -git-command=/var/lib/arvados/git/gitolite/src/gitolite-shell -repo-root=/var/lib/arvados/git/repositories
+User=git
+Group=git
+EnvironmentFile=/etc/default/arvados-git-httpd
+
+[Install]
+WantedBy=multi-user.target
