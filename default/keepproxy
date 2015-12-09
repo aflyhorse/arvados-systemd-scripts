@@ -1,3 +1,3 @@
 ARVADOS_API_TOKEN="xxxxxxxxxxxxxxxxxx"
 ARVADOS_API_HOST="uuid_prefix.example.org"
-DEFAULT_REPLICAS="2"
+DEFAULT_REPLICAS=2

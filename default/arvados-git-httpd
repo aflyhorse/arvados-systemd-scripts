@@ -1,4 +1,4 @@
-ARVADOS_API_HOST=uuid_prefix.example.org
-GITOLITE_HTTP_HOME=/var/lib/arvados/git
+ARVADOS_API_HOST="uuid_prefix.example.org"
+GITOLITE_HTTP_HOME="/var/lib/arvados/git"
 GL_BYPASS_ACCESS_CHECKS=1
 PATH="/var/lib/arvados/git/bin:/bin:/usr/bin"
