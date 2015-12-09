@@ -31,9 +31,9 @@ The RPMs expect the initial status of unit files are ```disabled``` by default, 
 
 Put the config files in:
 
-* Debian: ```/etc/default```
+* Debian: ```/etc/default/```
 
-* CentOS: ```/etc/sysconfig```
+* CentOS: ```/etc/sysconfig/```
 
 and then change the varibles ini the config file as appropriate.
 
