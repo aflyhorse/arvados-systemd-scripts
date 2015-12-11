@@ -37,6 +37,8 @@ Put the config files in:
 
 and then change the varibles in the config file as appropriate.
 
+Since the ```keepproxy``` file contains your API token, make sure it is not world readable.
+
 ### Licence
 
 The project is licensed under __Apache License Version 2.0__, unless otherwise specified.
