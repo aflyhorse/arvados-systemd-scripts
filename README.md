@@ -13,7 +13,7 @@ Remember to issue a ```systemctl daemon-reload``` afterwards.
 
 * This set of scripts has got rid of the [RVM](https://rvm.io/). RVM is a great tool for Ruby version control, but since this project is package-oriented, using RVM is not a good practice. Ruby 2.1.5 (the current version used by Arvados) should be included in repository as a dependency.
 
-* The default target of this script is Debian system. You need to change some redistribution-related path in unit files (see belowing). Automatic switching script is under development.
+* The default target of this script is Debian system. If you are using it on CentOS, run ```switch2cent.sh``` to patch this project.
 
 #### ```system``` directory
 
@@ -41,6 +41,6 @@ Since the ```keepproxy``` file contains your API token, make sure it is not worl
 
 ### Licence
 
-The project is licensed under __Apache License Version 2.0__, unless otherwise specified.
+The project is licensed under _Apache License Version 2.0_, unless otherwise specified.
 
-Some rights were granted to the __Arvados__ Project, including but not limited to modification, redistribution, and relicensing this project.
+Some rights were granted to the _Arvados_ Project, including but not limited to modification, redistribution, and relicensing this project.
