@@ -13,7 +13,7 @@ Remember to issue a ```systemctl daemon-reload``` afterwards.
 
 * This set of scripts has got rid of the [RVM](https://rvm.io/). RVM is a great tool for Ruby version control, but since this project is package-oriented, using RVM is not a good practice. Ruby 2.1.5 (the current version used by Arvados) should be included in repository as a dependency.
 
-* The default target of this script is Debian system. If you are using it on CentOS, run ```switch2cent.sh``` to patch this project.
+* The default target of this script is Debian system. If you are using it on CentOS, run [switch2cent.sh](switch2cent.sh) to patch this project.
 
 #### ```system``` directory
 
@@ -25,7 +25,7 @@ Put the service files in ```/etc/systemd/system/```.
 
 Put the service files in :
 * CentOS like: ```%{_unitdir}```.
-* Debian like: **(Missing direction here)**.
+* Debian like: ```/usr/lib/systemd/system/```.
 
 Note that the RPMs expect the initial status of unit files are _disabled_ by default, while DEBs usually _enable_ them automatically.
 
