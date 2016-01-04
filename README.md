@@ -23,7 +23,9 @@ Put the service files in ```/etc/systemd/system/```.
 
 ##### Packagers
 
-Put the service files in ```/usr/lib/systemd/system/```.
+Put the service files in :
+* CentOS like: ```%{_unitdir}```.
+* Debian like: **(Missing direction here)**.
 
 Note that the RPMs expect the initial status of unit files are _disabled_ by default, while DEBs usually _enable_ them automatically.
 

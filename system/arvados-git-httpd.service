@@ -8,6 +8,7 @@ ExecStart=/usr/bin/arvados-git-httpd -address=:9001 -git-command=/var/lib/arvado
 User=git
 Group=git
 EnvironmentFile=/etc/default/arvados-git-httpd
+Restart=on-abnormal
 
 [Install]
 WantedBy=multi-user.target
