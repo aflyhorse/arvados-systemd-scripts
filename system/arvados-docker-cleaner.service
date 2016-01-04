@@ -1,0 +1,13 @@
+[Unit]
+Description=Arvados Docker Container Cleaner
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m arvados_docker.cleaner --quota ${QUOTA}
+Restart=on-abnormal
+EnvironmentFile=/etc/default/arvados-docker-cleaner
+
+[Install]
+WantedBy=multi-user.target
+
